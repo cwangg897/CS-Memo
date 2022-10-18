@@ -118,29 +118,6 @@ final 키워드를 클래스에 붙이면 상속 불가능 클래스가 됩니�
 </pre>
 
 
-8. synchronized 를 메소드에 선언하는 것과, 특정 객체에 선언하는 것은 어떤 차이가 있습니까?
-
-9. Reflection 을 유용하게 사용하는 사례를 말씀해 주세요.
-
-10. JDK/JVM 은 대표적으로 OpenJDK 와 Oracle JDK 로 나뉘는데요, 업무에 어떤 JDK 를 사용하시겠습니까? 선택의 이유를 말씀해 주세요.
-
-11. hashCode / equals 메소드의 역할에 대해 아시는 내용을 최대한 설명해주세요.
-
-12. Java 의 Collections.unmodifiableList 같은 API 를 이용해 List 같은 collection 을 변경 불가능하게 만들 수 있습니다. 그렇다면 이 API 를 사용하면 immutability 를 달성할 수 있을까요?
-
-13. 다음 싱글턴 코드의 어떤 점을 개선하실 수 있습니까? (개선이 필요 없을 수도 있음 / 왜?)
-```java
-class MySingleton {
-  private static MySingleton instance;
-
-  public static synchronized MySingleton getInstance() {
-    if (instance == null) {
-        instance = new MySingleton();
-    }
-    return instance;
-  }
-}
-```
 
 
 
